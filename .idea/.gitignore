@@ -3,4 +3,8 @@
 /workspace.xml
 .DS_Store
 src/.DS_Store
-target/.DS_Store
+target/
+target/maven-status/
+target/surefire-reports/
+target/test-classes/
+.vscode/

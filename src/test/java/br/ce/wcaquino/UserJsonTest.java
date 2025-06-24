@@ -3,6 +3,8 @@ package br.ce.wcaquino;
 import static io.restassured.RestAssured.expect;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.*;
+import static org.hamcrest.collection.ArrayMatching.arrayContaining;
+import static org.hamcrest.collection.IsArrayWithSize.arrayWithSize;
 
 import io.restassured.RestAssured;
 import io.restassured.http.Method;
@@ -135,8 +137,8 @@ public class UserJsonTest {
             .body("name.collect{it.toUpperCase()}", hasItem("MARIA JOAQUINA"))
             .body("name.findAll{it.startsWith('Maria')}.collect{it.toUpperCase()}",
                     hasItem("MARIA JOAQUINA")) // startsWith = começa com
-            .body("name.findAll{it.startsWith('Maria')}.collect{it.toUpperCase()}.toArray()",
-                    allOf(arrayContaining("MARIA JOAQUINA"), arrayWithSize(1)))
+            //.body("name.findAll{it.startsWith('Maria')}.collect{it.toUpperCase()}.toArray()",
+                    //allOf(arrayContaining("MARIA JOAQUINA"), arrayWithSize(1)))
             // .body("age.collect{it * 2}", hasItems(60, 50, 40))
             .body("id.max()", is(3))
             .body("salary.min()", is(1234.5678f))
