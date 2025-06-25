@@ -1,6 +1,12 @@
 ![alt text](image.png)
 🔬 Automação de testes de APIs REST com Java, JUnit 4 e RestAssured
-📚 Material de apoio ao curso Testando API REST com REST Assured, disponível na Udemy.
+
+## 📚 Material de Apoio
+
+Este repositório foi desenvolvido como material complementar ao curso:
+
+> **[Testando API REST com REST Assured](https://uciandt.udemy.com/course/testando-api-rest-com-rest-assured/)**  
+> Disponível na plataforma **Udemy**.
 
 ### 🗂️ Estrutura do Projeto
 
@@ -76,8 +82,4 @@ Hamcrest	2.2
 
 📘 Projeto didático, ideal para estudos e práticas de automação
 
-🧹 Pastas como .vscode/, .idea/ e target/ estão no .gitignore
-
-📄 Licença
-
-📚 Este projeto é disponibilizado exclusivamente para fins educacionais.
+🧹 Pastas como .vscode/ .idea/ e target/ estão no .gitignore
